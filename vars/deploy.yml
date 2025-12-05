@@ -1,0 +1,6 @@
+# Artifactory variables
+rpm_name: "petclinic-{{ app_version }}-noarch.rpm"
+rpm_repo: "petclinic-repo"
+arti_url: "https://artifactory.example.com/artifactory"
+rpm_url: "{{ arti_url }}/{{ rpm_repo }}/{{ rpm_name }}"
+artifactory_token: "{{ lookup('env','ARTI_TOKEN') }}"

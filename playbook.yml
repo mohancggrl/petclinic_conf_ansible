@@ -1,0 +1,13 @@
+---
+- name: Deploy Petclinic Application
+  hosts: petclinic_servers
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Include deployment variables
+      include_vars:
+        dir: "vars"
+
+    - name: Include petclinic deployment tasks
+      include_role:
+         name: petclinic

@@ -1,0 +1,53 @@
+---
+# ===============================
+# MySQL Database Config
+# ===============================
+db_host: "mysql-db"
+db_port: "3306"
+db_name: "petclinicdb"
+db_user: "petuser"
+
+# ===============================
+# JPA / Hibernate
+# ===============================
+hibernate_ddl_auto: "update"
+hibernate_show_sql: "false"
+hibernate_dialect: "org.hibernate.dialect.MySQLDialect"
+hibernate_open_in_view: "false"
+
+# ===============================
+# SQL Initialization Files
+# ===============================
+sql_init_mode: "always"
+sql_schema_location: "classpath*:db/mysql/schema.sql"
+sql_data_location: "classpath*:db/mysql/data.sql"
+
+# ===============================
+# Thymeleaf
+# ===============================
+thymeleaf_mode: "HTML"
+
+# ===============================
+# Messages
+# ===============================
+messages_basename: "messages/messages"
+
+# ===============================
+# Actuator
+# ===============================
+actuator_expose: "*"
+
+# ===============================
+# Server Port
+# ===============================
+app_port: "8080"
+
+# ===============================
+# Logging
+# ===============================
+log_file_name: "/var/log/petclinic/petclinic.log"
+log_file_path: "/var/log/petclinic"
+log_level_root: "INFO"
+log_level_spring: "INFO"
+log_pattern_file: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %msg%n"
+log_pattern_console: ""

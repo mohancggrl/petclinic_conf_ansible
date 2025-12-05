@@ -1,0 +1,15 @@
+---
+# Temporary directories
+tmp_local: "/tmp/petclinic_local"
+tmp_remote: "/tmp/petclinic_remote"
+
+# User & group
+petclinic_user: "petclinic"
+petclinic_group: "petclinic"
+
+# Config paths
+config_dir: "/etc/petclinic"
+conf_file: "application.properties"
+
+# Service name
+service_name: "petclinic"
